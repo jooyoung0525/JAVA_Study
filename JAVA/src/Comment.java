@@ -19,5 +19,7 @@ public class Comment {
 				return true;
 			}
 			return false;
+			
+			// return num%2 == 0; --> if문과 같음
 		}
 }

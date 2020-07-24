@@ -22,7 +22,8 @@ public class Switch1 {
 		}
 		// $#@ -> break가 없기 때문에 조건에 맞는 문장 모두 실행
 		System.out.println();
-
+		
+		
 	}
 
 }

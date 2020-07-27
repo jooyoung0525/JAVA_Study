@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz5_MinSum {
+public class While_Quiz5_MinSum {
 	public static void main(String[] args) {
 		
 		int hap, n;

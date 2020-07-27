@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz8_20thSum {
+public class While_Quiz8_20thSum {
 	public static void main(String[] args) {
 		
 		//1 2 4 7 11 .... 

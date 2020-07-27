@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz2_Cal {
+public class While_Quiz2_Cal {
 	public static void main(String[] args) {
 		
 		int num = 10;

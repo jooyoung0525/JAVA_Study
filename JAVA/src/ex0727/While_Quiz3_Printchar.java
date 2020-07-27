@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz3_Printchar {
+public class While_Quiz3_Printchar {
 	public static void main(String[] args) {
 		
 		char ch = 'A';

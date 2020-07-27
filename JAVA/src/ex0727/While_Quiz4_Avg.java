@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz4_Avg {
+public class While_Quiz4_Avg {
 	public static void main(String[] args) {
 		
 		int num, hap, avg, cnt;

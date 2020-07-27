@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz10_GuGu {
+public class While_Quiz10_GuGu {
 	public static void main(String[] args) {
 		
 		int dan , num;

@@ -2,7 +2,7 @@ package ex0727;
 
 import java.util.Scanner;
 
-public class Quiz1_Sum {
+public class While_Quiz1_Sum {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);

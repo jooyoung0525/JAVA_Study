@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz9_Fibonacci {
+public class While_Quiz9_Fibonacci {
 	public static void main(String[] args) {
 		
 		/* <<³» Ç®ÀÌ>> 

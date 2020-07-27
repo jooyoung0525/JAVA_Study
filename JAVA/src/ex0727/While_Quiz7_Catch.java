@@ -1,6 +1,6 @@
 package ex0727;
 
-public class Quiz7_Catch {
+public class While_Quiz7_Catch {
 	public static void main(String[] args) {
 		
 		int x,y,cnt;

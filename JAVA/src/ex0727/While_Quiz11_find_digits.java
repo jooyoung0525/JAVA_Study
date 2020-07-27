@@ -2,7 +2,7 @@ package ex0727;
 
 import java.util.Scanner;
 
-public class While_Quiz11 {
+public class While_Quiz11_find_digits {
 	public static void main(String[] args) {
 		//정수를 입력 받아 입력받은 정수가 몇자리 정수인지 출력 -- while문을 이용
 		//수 ? 123

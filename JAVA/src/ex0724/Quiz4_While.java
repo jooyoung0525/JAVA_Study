@@ -23,7 +23,7 @@ public class Quiz4_While {
 			cnt++;
 			hap+=cnt;
 			if(cnt % 3 == 0)
-				three_hap+=cnt;
+				three_hap += cnt;
 		}
 
 		System.out.println("1~"+num+"까지의 합 : "+ hap);

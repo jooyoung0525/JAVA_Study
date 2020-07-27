@@ -22,6 +22,7 @@ public class For_Quiz10_pdf7 {
 		}
 		
 		
+		
 		for(int i = score1; i<=score2; i++)
 		{
 			if(i%3 == 0 || i % 5 == 0) {

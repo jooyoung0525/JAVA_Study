@@ -1,6 +1,6 @@
 package ex0727;
 
-public class while_ex1 {
+public class While_ex1 {
 	public static void main(String[] args) {
 		int n,m;
 		

@@ -8,8 +8,10 @@ public class For_Quiz8_pdf5 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("10개의 정수를 입력 하세요...");
 		
-		int max = -987654321; //가장 작은수 초기 값 주는 방법
-		//방법 1 ) for문 밖에서 입력값을 한번 받고 for안에서 입력9값을 받으면 됨
+		int max = -987654321; 
+		
+		//방법 1 ) for문 밖에서 입력값을 한번 받고 for안에서 입력9값을 받으면 됨.
+		//방법 2 ) int max = Integer.MIN_VALUE; //정수 중 가장 작은 값!
 		
 		for(int i = 0; i<10; i++)
 		{
@@ -20,6 +22,7 @@ public class For_Quiz8_pdf5 {
 		}
 		
 		System.out.println("최대값 : "+max);
+		
 		
 		
 		/*

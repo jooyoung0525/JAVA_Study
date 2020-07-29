@@ -16,18 +16,7 @@ public class For_ex2 {
 		/*
 		<<Â¦¼ö ÇÕ>>
 	
-		int n,s;
-		s = 0;
-		
-		for(n = 2; n<=10; n+=2) 
-			s+=n;
-		
-		System.out.println(n+","+s);*/
-		
-		
-		/*<<È¦¼ö ÇÕ>>
-	
-		int n,s;
+				int n,s;
 		s = 0;
 		
 		for(n = 1; n<=10; n+=2) 

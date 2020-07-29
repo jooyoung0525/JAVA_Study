@@ -12,7 +12,7 @@ public class While_Quiz7_040302pdf7 {
 			System.out.print("수 ? ");
 			num=sc.nextInt();
 		}while(num<0);
-		
+		 
 		System.out.println("원래의 수 : "+num);
 		
 		int cpy = num;

@@ -2,7 +2,7 @@ package ex0729;
 
 import java.util.Scanner;
 
-public class Array_Quiz2 {
+public class Array_Quiz2_StandardDeviation {
 	public static void main(String[] args) {
 	
 		Scanner sc = new Scanner(System.in);
@@ -12,9 +12,9 @@ public class Array_Quiz2 {
 		// 마지막에 총합과 평균을 출력
 		
 		int score[] =new int[5];
-		int ave, tot;
+		int avg, tot;
 		
-		ave = tot = 0;
+		avg = tot = 0;
 		System.out.print("5개의 정수 입력...");
 		for(int i = 0; i<score.length; i++)
 		{
@@ -22,14 +22,14 @@ public class Array_Quiz2 {
 			tot += score[i];
 		}
 		
-		ave = tot / score.length;
+		avg = tot / score.length;
 		
 		System.out.println("편차출력");
 		for(int i : score)
-			System.out.println(i+" "+(i-ave));
+			System.out.println(i+" "+(i-avg));
 		
 		System.out.println("합 : "+ tot);
-		System.out.println("평균 : "+ ave);
+		System.out.println("평균 : "+ avg);
 		
 		sc.close();
 	}

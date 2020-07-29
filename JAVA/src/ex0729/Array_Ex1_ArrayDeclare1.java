@@ -1,6 +1,6 @@
 package ex0729;
 
-public class Array_Ex1 {
+public class Array_Ex1_ArrayDeclare1 {
 	public static void main(String[] args) {
 	
 		//int x; --> x : 기본자료형

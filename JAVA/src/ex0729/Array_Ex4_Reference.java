@@ -1,6 +1,6 @@
 package ex0729;
 
-public class Array_Ex4 {
+public class Array_Ex4_Reference {
 	public static void main(String[] args) {
 	
 		int a[] = new int[3]; //Heap¿µ¿ª

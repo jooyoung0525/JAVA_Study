@@ -15,18 +15,9 @@ public class While_Quiz7_040302pdf7 {
 		 
 		System.out.println("원래의 수 : "+num);
 		
-		int cpy = num;
-		int divnum = 10;
-		
-		while(cpy>0)
-		{
-			cpy/=10;
-		}
-		
 		System.out.print("뒤집은 수 : ");
 		while(true) {
-			int resultn = num%divnum;
-			System.out.printf("%d",resultn);
+			System.out.printf("%d",num%10);
 			num/=10;
 			if(num <= 0)break;
 		}

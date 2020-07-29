@@ -1,6 +1,6 @@
 package ex0729;
 
-public class Array_Ex2 {
+public class Array_Ex2_ArrayDeclare2 {
 	public static void main(String[] args) {
 	
 		//배열 선언 및 메모리 할당.

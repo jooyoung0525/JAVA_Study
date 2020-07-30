@@ -4,7 +4,7 @@ public class Array_2D_Ex1 {
 	public static void main(String[] args) {
 
 		int[][]a = new int[][] {{1,2,3},{4,5,6},{7,8,9}};
-		int[][]b = new int[][] {{10,20,30},{40,60},{70,80,90}};
+		int[][]b = new int[][] {{10,20,30},{40,60},{70,80,90}}; 
 		
 		System.out.println("a배열...");
 		for(int i = 0; i<a.length; i++) {
@@ -14,13 +14,8 @@ public class Array_2D_Ex1 {
 			System.out.println();
 		}
 		
+		//향상된 for문장으로 이차원 배열 출력
 		System.out.println("\na배열 향상된 for문장...");
-		for(int i = 0; i<a.length; i++) {
-			for(int y: a[i])
-				System.out.printf("%4d",y);
-			System.out.println();
-		}
-		
 		for(int row[] : a) {
 			for(int x : row)
 				System.out.printf("%4d",x);

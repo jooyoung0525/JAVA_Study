@@ -1,6 +1,6 @@
 package ex0730;
 
-public class pdf1_050201_hw1 {
+public class Pdf1_050201_hw1 {
 	public static void main(String[] args) {
 		
 		int arr[][] =new int[5][5];

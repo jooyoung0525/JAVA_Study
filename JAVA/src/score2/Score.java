@@ -156,7 +156,7 @@ public class Score {
 		}
 		
 		//삭제
-		int count = ss.getCount();
+		int count = ss.getCount(); //count값
 		ScoreVO list[] = ss.listScore();
 		for(int i = 0; i<count; i++) { //입력한거만큼만 출력
 			if(list[i]==vo) {

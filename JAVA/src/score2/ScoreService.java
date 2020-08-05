@@ -12,6 +12,11 @@ public class ScoreService {
 		allocation(10);
 	}
 	
+	/**
+	 * 메모리크기를 설정하기 위한 숫자의 단위
+	 * @param capacity
+	 */
+	
 	private void allocation(int capacity) {
 		ScoreVO temp[] = new ScoreVO[capacity]; //temp의 크기를 계속 늘려서 list에 복사
 		if(list!=null && count>0) {
@@ -20,7 +25,7 @@ public class ScoreService {
 		list = temp;
 	}
 	
-	public int append(ScoreVO vo) {
+	public int append(ScoreVO vo) { //vo : 배열 저장할 객체
 		if(count>=list.length) {
 			
 			//배열을 10개씩 늘기
@@ -33,7 +38,7 @@ public class ScoreService {
 	}
 	
 	
-	public ScoreVO readScore(String hak) {
+	public ScoreVO readScore(String hak) { //검색에 사용할 용도
 		
 		ScoreVO vo = null;
 		

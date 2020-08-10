@@ -7,7 +7,7 @@ public class CalendarClass_CalculateAgeInFull {
 		
 		Calendar now = Calendar.getInstance(); //2020-08-06
 		
-		
+		System.out.printf("%tF",now); //오늘
 		//1993.4.25의 만나이 계산
 		Calendar cal = Calendar.getInstance();
 		cal.set(1993,4-1,25);

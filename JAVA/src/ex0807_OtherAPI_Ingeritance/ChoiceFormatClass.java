@@ -1,4 +1,4 @@
-package ex0807;
+package ex0807_OtherAPI_Ingeritance;
 
 import java.text.MessageFormat;
 

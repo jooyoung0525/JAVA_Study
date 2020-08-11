@@ -22,6 +22,23 @@ public class Account {
 	}
 	
 	public int getTotalTransaction() {
+		//전체 거래 건수
 		return totalTransaction;
+	}
+	
+	public boolean addTransaction(TransactionVO vo) {
+		//거래 내역 등록
+		if(totalTransaction>=50) return false;
+		
+		transactionList[totalTransaction++]=vo;
+		return true;
+	}
+	
+	public TransactionVO getLastTransaction() {	
+		//마지막 거래 내역
+		if(totalTransaction > 0)
+			return transactionList[totalTransaction-1];
+		
+		return null;
 	}
 }

@@ -21,7 +21,7 @@ public class CalendarClass_CalculateAgeInFull {
 				||(cal.get(Calendar.MONTH) == now.get(Calendar.MONTH)
 				&&cal.get(Calendar.DATE)>now.get(Calendar.DATE))
 				) { age--; 
-				}
+				} 
 		
 		System.out.println(age);
 		

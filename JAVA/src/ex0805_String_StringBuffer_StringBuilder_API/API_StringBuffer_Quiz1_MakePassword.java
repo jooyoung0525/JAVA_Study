@@ -26,7 +26,7 @@ public class API_StringBuffer_Quiz1_MakePassword {
 		for(int i = 0; i<10; i++) {
 			n = (int)(Math.random()*s.length()); //-1¾ÈÇØÁàµµµÊ
 			sb.append(s.substring(n,n+1));
-		}
+		} 
 		
 		return sb.toString();
 	}

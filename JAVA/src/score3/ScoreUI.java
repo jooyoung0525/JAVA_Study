@@ -1,5 +1,7 @@
 package score3;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
@@ -16,11 +18,11 @@ public class ScoreUI {
 			try {
 			
 				do {
-					System.out.println("1.등록   2.수정   3.삭제   4.리스트   5.학번검색   6.이름검색   7.종료  =>");
+					System.out.println("1.등록   2.수정   3.삭제   4.리스트   5.학번검색   6.이름검색   7.이름순  8.총점순  9.종료  =>");
 					ch = sc.nextInt();
 				}while(ch<1||ch>7);
 				
-				if(ch == 7)return;
+				if(ch == 9)return;
 				
 				switch(ch) {
 				case 1: insert(); break;
@@ -29,7 +31,8 @@ public class ScoreUI {
 				case 4: list();break;
 				case 5: findByHak();break;
 				case 6: findByName();break;
-				
+				case 7: sortName(); break;
+				case 8: sortTot(); break;
 				}
 				
 			} catch (InputMismatchException e) {
@@ -144,6 +147,15 @@ public class ScoreUI {
 		System.out.println("\n전체 리스트...");
 		
 		List<ScoreVO> list = score.listScore();
+		Comparator<ScoreVO>comp1 = new Comparator<ScoreVO>() {
+
+			@Override
+			public int compare(ScoreVO o1, ScoreVO o2) {
+				return o1.getHak().compareTo(o2.getHak());
+			}
+		};
+		
+		Collections.sort(list,comp1);
 		for(ScoreVO vo : list) {
 			System.out.println(vo);
 		}
@@ -186,8 +198,53 @@ public class ScoreUI {
 		for(ScoreVO vo : list) {
 			System.out.println(vo);
 		}
+		System.out.println();		
+	}
+	
+	public void sortName() {
+		System.out.println("\n이름정렬");
+		
+		List<ScoreVO> list = score.listScore();
+		
+		//Comparator은 인터페이스!
+		Comparator<ScoreVO>comp1 = new Comparator<ScoreVO>() {
+
+			@Override
+			public int compare(ScoreVO o1, ScoreVO o2) {
+				return o1.getName().compareTo(o2.getName());
+			}
+		};
+		
+		Collections.sort(list,comp1);
+		
+		for(ScoreVO vo : list) {
+			System.out.println(vo);
+		}
 		System.out.println();
+	}
+	
+	
+	
+	
+	public void sortTot() {
+		System.out.println("\n총점 내림차순정렬");
+		
+		List<ScoreVO> list = score.listScore();
+		
+		Comparator<ScoreVO>comp1 = new Comparator<ScoreVO>() {
+
+			@Override
+			public int compare(ScoreVO o1, ScoreVO o2) {
+				return -(o1.getTot()-o2.getTot());
+			}
+		};
+		
+		Collections.sort(list,comp1);
 		
 		
+		for(ScoreVO vo : list) {
+			System.out.println(vo);
+		}
+		System.out.println();
 	}
 }

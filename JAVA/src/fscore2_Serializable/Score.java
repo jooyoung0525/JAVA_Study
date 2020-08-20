@@ -1,0 +1,11 @@
+package fscore2_Serializable;
+
+import java.util.List;
+
+public interface Score {
+	public void insertScore(ScoreVO vo);
+	public boolean deleteScore(String hak);
+	public List<ScoreVO> listScore();
+	public ScoreVO readScore(String hak);
+	public void saveFile();
+}

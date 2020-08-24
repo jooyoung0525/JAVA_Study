@@ -1,4 +1,4 @@
-package ex0824;
+package ex0824_NetWork_Reflect;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;

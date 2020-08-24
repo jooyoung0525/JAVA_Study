@@ -1,4 +1,4 @@
-package ex0824;
+package ex0824_NetWork_Reflect;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -22,7 +22,7 @@ public class Server_for_One {
 			
 			while(true) {
 				Socket sc = ss.accept();
-				WorkerThread wt = new WorkerThread(sc);
+				WorkerThread wt = new WorkerThread(sc); //클라이언트 소켓 thread에 넘김
 				wt.start();
 			}
 		} catch (Exception e) {
@@ -36,7 +36,7 @@ public class Server_for_One {
 		private Socket sc =  null;
 		
 		public WorkerThread(Socket sc) {
-			this.sc = sc;
+			this.sc = sc; //생성자로 소켓 받음
 		}
 		
 		public void sendMsg(String msg) {
@@ -48,7 +48,7 @@ public class Server_for_One {
 					if(s==sc)continue;
 					
 					//메세지를 전송할 소켓의 출력 스트림.
-					PrintWriter pw = new PrintWriter(s.getOutputStream(),true);
+					PrintWriter pw = new PrintWriter(s.getOutputStream(),true); //출력스트림 : 데이터 보낼때
 					
 					pw.println(msg);
 					
@@ -59,7 +59,7 @@ public class Server_for_One {
 		}
 		
 		@Override
-		public void run() {
+		public void run() { //스레드가 실행되면
 			String ip = null;
 			String msg = null;
 			

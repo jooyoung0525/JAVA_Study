@@ -1,9 +1,9 @@
-package ex0820;
+package ex0820_Thread;
 
 								 //지금까지 모든 파일처리는 순차처리.
 import java.io.RandomAccessFile; //원하는 파일 정보를 읽어낼 수 있음. --> 입력과 출력을 모두 할 수 있음.
 
-public class Ex1 {
+public class RandomAccessFile_ex1 {
 	public static void main(String[] args) {
 		 RandomAccessFile raf = null;
 		 

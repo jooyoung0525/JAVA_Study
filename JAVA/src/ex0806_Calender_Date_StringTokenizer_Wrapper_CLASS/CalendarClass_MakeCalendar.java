@@ -9,6 +9,9 @@ public class CalendarClass_MakeCalendar {
 		Scanner sc = new Scanner(System.in);
 		Calendar cal = Calendar.getInstance();
 		
+		
+		
+		/*
 		int y,m,w;
 		
 		System.out.print("³âµµ ?");
@@ -42,7 +45,7 @@ public class CalendarClass_MakeCalendar {
 		
 		System.out.println("===============================");
 		
-		
+		*/
 		sc.close();
 	}
 }

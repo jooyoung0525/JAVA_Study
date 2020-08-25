@@ -1,6 +1,7 @@
 package ex0806_Calender_Date_StringTokenizer_Wrapper_CLASS;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class DateClass_FindLiveDate {
@@ -49,6 +50,9 @@ public class DateClass_FindLiveDate {
 			long diff = sdate.getTime()- date3.getTime();
 			diff = diff / (24*60*60*1000); //하루,시,분,초 순서
 			System.out.println("석우가 오늘까지 산 날짜: "+diff);
+			
+			
+			
 		}catch (Exception e) {
 			//예외가 발생하는 경우 이 블럭 안의 내용을 실행
 			e.printStackTrace();

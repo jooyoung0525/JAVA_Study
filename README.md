@@ -1,4 +1,4 @@
-# SW_Study
+# JAVA_Study
 
-1. JAVA language
-2. JAVA algorithm practice
+1.  JAVA Language study
+2.  JAVA algorithm practice

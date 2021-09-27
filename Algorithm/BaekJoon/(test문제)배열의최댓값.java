@@ -10,21 +10,20 @@ public static void main(String[] args) {
 
 static int solution(int[][] costs, int xcost, int ycost) {
 	
-	int[][] price = new int[costs.length][costs.length];
+	int[][] price = new int[costs.length+2][costs.length+2];
 	int []xDist = {-1,0};
 	int []yDist= {0,-1};
 	
 	// 배열의 최대값구하기
-	for(int i = 0; i<costs.length;i++) {
-		for(int j = 0; j<costs.length; j++) {
+	for(int i = 1; i<=costs.length;i++) {
+		for(int j = 1; j<=costs.length; j++) {
 			int maxCost = price[i][j];
 			
 			for(int k = 0; k<2; k++) {
 				int beforeX = i+xDist[k];
 				int beforeY = j+yDist[k];
-				if(beforeX == costs.length || beforeY == costs.length)continue;
-				
-				int nowCost= price[beforeX][beforeY]+costs[i][j]; 
+				int nowCost= price[beforeX][beforeY]+costs[i-1][j-1]; 
+
 				if(maxCost<nowCost) {
 					maxCost=nowCost;
 				}
@@ -36,7 +35,7 @@ static int solution(int[][] costs, int xcost, int ycost) {
 	/// max가 음수이거나 0이면 0리턴, 아니면 max값 리턴
 	int max = 0;
 	int downCount = costs.length-1;
-	for(int i = 0; i<costs.length; i++) {
+	for(int i = 1; i<=costs.length; i++) {
 		int rightCount = i-1;
 		int nowCost = price[costs.length][i]; // 맨 하단 최대 값들
 		// 최종적으로 x,y 움직인 방향을 뺀 값
@@ -50,6 +49,7 @@ static int solution(int[][] costs, int xcost, int ycost) {
 //		}
 //		System.out.println();
 //	}
+	
 
 	return max;
 }
